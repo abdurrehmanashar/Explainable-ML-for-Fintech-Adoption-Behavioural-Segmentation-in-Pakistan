@@ -4,9 +4,10 @@
 ¹ Beaconhouse School System PTC, Gujranwala, Pakistan
 ² KDD Lab, FAST-NUCES, Islamabad, Pakistan
 
-[Paper (PDF)](./paper/Beyond Access: Explainable Machine Learning Reveals a Connected but Unengaged Population in Pakistan’s Digital Financial System.pdf) · [Data source](https://microdata.worldbank.org/index.php/catalog/7961) · [Citation](#citation)
+[📄 Read the Paper](./paper/beyond-access-digital-financial-system.pdf) ·
+[📊 Data Source](https://microdata.worldbank.org/index.php/catalog/7961) ·
+[📚 Citation](#citation)
 
----
 
 ## Headline finding
 
