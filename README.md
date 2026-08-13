@@ -32,18 +32,24 @@ Gender, not urban/rural status, is the strongest structural predictor of segment
 │
 ├── paper/
 │   ├── fintech_adoption_pakistan.tex     # Single-file IEEE-format source, inline bibliography
-│   └── figures/                          # All figures referenced by the .tex file (see below)
+│   └── beyond-access-digital-financial-system.pdf
 │
-├── data/
-│   └── README.md                         # How to obtain the Findex microdata (not redistributed here)
+├── Explainable-ML-for-Fintech-Adoption-Behavioural-Segmentation-in-Pakistan-main
+│   ├── data                              # csv files
+│   ├── graphs                            # figures
+│   └── README.md                         # How to obtain the Findex microdata
 │
-├── 01_load_and_construct_target.py       # Data cleaning, Adoption Tier target construction
-├── 02_model_comparison.py                # Logistic Regression / Decision Tree / RF / XGBoost + SHAP
-├── 03_segmentation.py                    # k-means segmentation, PCA visualization
-├── 04_statistical_tests.py               # Chi-square tests, Wilson confidence intervals
-├── 05_model_diagnostics.py               # Hyperparameter tuning, robustness, calibration, ablation, error analysis
-├── 06_cluster_validation.py              # Bootstrap stability, algorithm cross-check, k=2 vs k=3
-└── 07_shap_summary_tuned.py              # Regenerates Fig. 5 from the tuned model (see note below)
+├── notebooks 
+│   ├── data_prep.ipynb       # Data cleaning, Adoption Tier target construction
+│   ├── model_comparison.ipynb                # Logistic Regression / Decision Tree / RF / XGBoost + SHAP
+│   ├── segmentation.ipynb                    # k-means segmentation, PCA visualization
+│   ├── stat_test.ipynb                       # Chi-square tests, Wilson confidence intervals
+│   ├── model_diagnostics.ipynb               # Hyperparameter tuning, robustness, calibration, ablation, error analysis
+|   └──  cluster_validation.ipynb             # Bootstrap stability, algorithm cross-check, k=2 vs k=3
+|
+└── docs
+│   ├── ddi-documentation-english_microdata-7961.pdf
+│   └── hypothesis_variable_selection.md
 ```
 
 ## Reproducing the analysis
@@ -58,18 +64,13 @@ pip install -r requirements.txt
 2. Run the pipeline in order:
 
 ```bash
-python 01_load_and_construct_target.py
-python 02_model_comparison.py
-python 03_segmentation.py
-python 04_statistical_tests.py
-python 05_model_diagnostics.py      # requires 02's output
-python 06_cluster_validation.py     # requires 03's output
-python 07_shap_summary_tuned.py     # regenerates the corrected Fig. 5 (see note below)
+data_prep.ipynb
+model_comparison.ipynb
+segmentation.ipynb
+stat_test.ipynb
+model_diagnostics.ipynb      # requires 02's output
+cluster_validation.ipynb     # requires 03's output
 ```
-
-Each script reads the output of an earlier script and writes its own CSV/PNG outputs. Move the generated PNGs into `paper/figures/` before compiling the paper.
-
-**Note on Fig. 5**: an earlier draft's SHAP summary figure was generated from the *default* (untuned) Random Forest, which did not match the SHAP ranking reported in the text and Table XI (both computed from the *tuned* model). `07_shap_summary_tuned.py` regenerates this figure correctly from the tuned model and includes a built-in check against the paper's reported ranking order.
 
 ## Building the paper
 
