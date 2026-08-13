@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code or findings, please cite the paper below."
+title: "Beyond Access: Explainable Machine Learning Reveals a Connected but Unengaged Population in Pakistan's Digital Financial System"
+authors:
+  - family-names: "Ashar"
+    given-names: "Abdur-Rehman"
+    affiliation: "Beaconhouse School System PTC, Gujranwala, Pakistan"
+    email: "abdurrehmanashar@gmail.com"
+  - family-names: "Ashar"
+    given-names: "Umema"
+    affiliation: "KDD Lab, FAST-NUCES, Islamabad, Pakistan"
+    email: "umema2004@gmail.com"
+date-released: 2026-01-01
+version: "1.0.0"
+repository-code: "https://github.com/YOUR_USERNAME/YOUR_REPO_NAME"
+keywords:
+  - fintech adoption
+  - financial inclusion
+  - explainable AI
+  - SHAP
+  - k-means clustering
+  - model calibration
+  - algorithmic fairness
+  - Pakistan
+  - Global Findex
+license: MIT
+preferred-citation:
+  type: article
+  title: "Beyond Access: Explainable Machine Learning Reveals a Connected but Unengaged Population in Pakistan's Digital Financial System"
+  authors:
+    - family-names: "Ashar"
+      given-names: "Abdur-Rehman"
+    - family-names: "Ashar"
+      given-names: "Umema"
+  year: 2026
