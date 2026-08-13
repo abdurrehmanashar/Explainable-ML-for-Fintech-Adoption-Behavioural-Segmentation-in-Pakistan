@@ -4,7 +4,7 @@
 ¹ Beaconhouse School System PTC, Gujranwala, Pakistan
 ² KDD Lab, FAST-NUCES, Islamabad, Pakistan
 
-[Paper (PDF)](./paper/fintech_adoption_pakistan.pdf) · [Data source](https://microdata.worldbank.org/index.php/catalog/7961) · [Citation](#citation)
+[Paper (PDF)](./paper/Beyond Access: Explainable Machine Learning Reveals a Connected but Unengaged Population in Pakistan’s Digital Financial System.pdf) · [Data source](https://microdata.worldbank.org/index.php/catalog/7961) · [Citation](#citation)
 
 ---
 
