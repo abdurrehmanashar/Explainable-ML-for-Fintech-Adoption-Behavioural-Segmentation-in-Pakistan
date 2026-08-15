@@ -31,8 +31,7 @@ Gender, not urban/rural status, is the strongest structural predictor of segment
 ├── .gitignore
 │
 ├── paper/
-│   ├── fintech_adoption_pakistan.tex     # Single-file IEEE-format source, inline bibliography
-│   └── beyond-access-digital-financial-system.pdf
+│   └── BeyondAccess.pdf
 │
 ├── Explainable-ML-for-Fintech-Adoption-Behavioural-Segmentation-in-Pakistan-main
 │   ├── data                              # csv files
